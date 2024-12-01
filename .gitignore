@@ -6,5 +6,5 @@ filtered_data/
 Data_flattened/*
 flattened_data/
 .python-version
-
+flattened_data.zip
 __pycache__/
