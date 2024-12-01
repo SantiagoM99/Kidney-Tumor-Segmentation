@@ -165,13 +165,13 @@ def visualize_slice(image_path, mask_path, slice_idx=None):
 
 if __name__ == "__main__":
     # Example usage
-    data_dir = "./filtered_data"
+    data_dir = "./data"
 
-    # Count orientations
-    orientations = count_orientations(data_dir)
-    print("\nOrientation Counts:")
-    for orientation, count in orientations.items():
-        print(f"{orientation}: {count} scans")
+    # # Count orientations
+    # orientations = count_orientations(data_dir)
+    # print("\nOrientation Counts:")
+    # for orientation, count in orientations.items():
+    #     print(f"{orientation}: {count} scans")
 
     # Compute slice statistics
     stats = compute_slice_statistics(data_dir)
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     for key, value in stats.items():
         print(f"{key}: {value}")
 
-    # Visualize a slice
-    image_path = "filtered_data/case_00000/filtered_imaging.nii.gz"
-    mask_path = "filtered_data/case_00000/filtered_segmentation.nii.gz"
-    visualize_slice(image_path, mask_path)
+    # # Visualize a slice
+    # image_path = "filtered_data/case_00000/filtered_imaging.nii.gz"
+    # mask_path = "filtered_data/case_00000/filtered_segmentation.nii.gz"
+    # visualize_slice(image_path, mask_path)
