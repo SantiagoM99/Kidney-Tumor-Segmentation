@@ -1,2 +1,2 @@
 # Kidney-Tumor-Segmentation
-Kidney Tumor Segmentation based on the Challenge Kits2019
+Kidney Tumor Segmentation based on the Kits2019 Challenge
