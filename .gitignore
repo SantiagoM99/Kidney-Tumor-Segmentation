@@ -3,7 +3,8 @@ env/
 venv/
 data/
 filtered_data/
-
+Data_flattened/*
+flattened_data/
 .python-version
 
 __pycache__/
