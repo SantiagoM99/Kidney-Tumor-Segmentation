@@ -94,23 +94,18 @@ class Kits20192DDataset:
           - 127: Kidney -> 1
           - 255: Tumor -> 2
         """
+        image_path = self.image_paths[idx]
+        mask_path = self.mask_paths[idx]
+        
+        # Load image and mask
+        image = np.load(image_path)
+        mask = np.load(mask_path)
         # Get paths for image and mask
         # Convert mask to binary segmentation:
         # 0: background
         # 1: kidney (values in the middle range)
         # 2: tumor (values in the high range)
         mask = mask.astype(np.float32)
-        
-        # You might need to adjust these thresholds based on your data
-        kidney_threshold = 128
-        tumor_threshold = 200
-        
-        kidney_mask = (mask >= kidney_threshold) & (mask < tumor_threshold)
-        tumor_mask = mask >= tumor_threshold
-        
-        mask = np.zeros_like(mask, dtype=np.int64)
-        mask[kidney_mask] = 1
-        mask[tumor_mask] = 2
 
 
         # Apply Albumentations transform
