@@ -1,8 +1,9 @@
 # Kidney-Tumor-Segmentation
-
+![result_1880_0](https://github.com/user-attachments/assets/52d2f4db-89e0-4772-88e6-7163f9e353a0)
 ## Project Overview
 
 This repository is dedicated to kidney and renal tumor segmentation, developed as part of the **KiTS2019 Challenge**. The task involves correctly segmenting both kidneys and renal tumors from medical imaging datasets. The repository includes implementations for **3D segmentation** and **2D segmentation**, along with supporting scripts and tools for data preparation and experimentation.
+
 
 ---
 
